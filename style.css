@@ -1,0 +1,293 @@
+/*  common styling all four pages*/
+body{
+    margin:30;
+    font-family:Arial,sans-serif;
+    background-color:aqua;
+    color:blue;
+}
+/*  navbar styling */
+.navbar{
+    background-color:pink;
+    color:brown;
+    padding:18px 10px;
+    display:flex;
+    justify-content:space-between;
+    align-item:center;
+}
+
+.logo{
+    margin:1;
+    font-size:27px;
+    letter-spacing:1px;
+}
+nav{
+    display:flex;
+    gap:25px;
+
+}
+nav a{
+    color:black;
+    text-decoration:underline;
+    font-size:15px;
+    font-weight:bold;
+}
+nav a:hover{
+    color:red;
+    text-decoration:underline;
+    font-size:40px;
+}
+/*    hero secttion with background image  */
+.hero{
+    background-image:url("");
+    min-height:420px;
+    display:flex;
+    align-items:center;
+    padding:50px;
+    color:blue;
+}
+.hero-content{
+    max-width:650px;
+}
+.tagline{
+    color:blueviolet;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
+
+}
+.hero h1{
+    font-size:42px;
+    line-height:1.2;
+    margin:15px;
+}
+.description{
+    font-size:17px;
+    line-height:1.8;
+    color:black;
+    max-width:550px;
+}
+.btn{
+    display:inline;
+    background-color:white;
+    color:blue;
+    padding:14px 22px;
+    margin-top:15px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+.btn:hover{
+    background-color: bisque;
+    color:darksalmon;
+
+}
+/*  courses section*/
+.courses{
+    text-align:center;
+    padding:55px 40px;
+}
+.courses h2{
+    color:darkorange;
+    font-size:30px;
+    margin:10px 30px;
+}
+.section-description{
+    color:darkviolet;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+/*cards layout*/
+.container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+.card{
+    background-color:white;
+    width:250px;
+    padding:25px;
+    border:9px dotted green;
+    border-radius:20px;
+    text-align:left;
+    box-shadow: 0 4px 12px rgba(20,40,70,0.06);
+}
+.card-icon{
+      display:inline-block;
+      background-color:chartreuse;
+      color:black;
+      padding:10px 14px;
+      border-radius:6px;
+      font-weight:bold;
+}
+.card h3{
+    color:orange;
+    font-size:20px;
+
+}
+.card p{
+    color:sandybrown;
+    line-height:1.7;
+}
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    color:darkorchid;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* 8. About Section */
+.about {
+    background-color: #e7efff;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.about h2 {
+    color: #142846;
+}
+
+.about p {
+    line-height: 1.8;
+    color: #53627a;
+}
+
+/* 9. Other HTML Pages */
+.page-heading {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.page-heading h1,
+.about-section h1,
+.contact-section h1 {
+    color: #142846;
+}
+
+.about-section {
+    background-color: white;
+    text-align: center;
+    padding: 35px;
+    margin: 35px auto;
+    max-width: 750px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.course-page {
+    padding-bottom: 40px;
+}
+
+/* 10. Contact Form */
+.contact-section {
+    background-color: white;
+    max-width: 450px;
+    padding: 25px;
+    margin: 35px auto;
+    border-radius: 10px;
+}
+
+.contact-section h1 {
+    text-align: center;
+}
+
+.contact-section label {
+    display: block;
+    margin-top: 12px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccd5e2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.contact-section button {
+    display: block;
+    background-color: #142846;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #2457a7;
+}
+
+/* 11. Footer */
+footer {
+    background-color:aliceblue;
+    color:red;
+    text-align: center;
+    margin-top:30px;
+
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.7;
+    padding:10px;
+    color:purple;
+
+    margin:50px 20px;
+}
+
+/* 12. Small Screen Adjustment */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 45px 22px;
+        min-height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        gap: 18px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .about-section {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .contact-section {
+        margin: 20px;
+    }
+}
+
+
+
